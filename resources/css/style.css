@@ -71,6 +71,10 @@ nav ul {
   padding: 0.75rem 0;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /* styles for products*/
 .products {
   margin-top: 3rem;
@@ -136,4 +140,21 @@ footer {
 .copyright {
   position: relative;
   top: 5rem;
+}
+
+/* media queries*/
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+  .glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
 }
